@@ -1,0 +1,143 @@
+body {
+  background: url('image/fotopc.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+.form-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #020202;
+}
+.login-container {
+  background: rgba(255, 255, 255, 0.582);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(7, 7, 7, 0.973);
+  max-width: 350px;
+  width: 100%;
+}
+.form-control {
+  border-color: #f56025;
+  border-radius: 8px;
+}
+
+.form-control:focus {
+  border-color: #f56025;
+  box-shadow: 0 0 0 0.2rem rgba(246, 96, 37, 0.25);
+}
+.btn-primary {
+  background-color: hsl(0, 71%, 30%);
+  border-color: #020202;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  border-color: #fdb71e;
+  background-color: rgb(184, 33, 28);
+  transform: scale(1.05);
+}
+.icon-container {
+  position: relative;
+}
+.icon-container i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  border-color: #020202;
+  transform: translateY(-50%);
+  color: #020202;
+  border-width: 1px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    body {
+        background: url('image/foto.jpg') no-repeat center center; /* Fondo para móviles y tablets */
+        background-size: cover; /* Asegura que cubra toda la pantalla */
+    }
+
+    .container {
+        background-color: #fcfbfb59; /* Fondo más claro para contraste */
+        max-width: 90%; /* Reduce el ancho para pantallas pequeñas */
+        padding: 15px; /* Menos relleno */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Ajusta el tamaño del título */
+    }
+
+    #login-form::before {
+        font-size: 40px; /* Reduce el icono */
+    }
+
+    button.btn-primary {
+      width: 100%;
+      background-color: rgb(15, 69, 105);
+      color: white;
+      padding: 0.75rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius:8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    button.btn-primary:hover {
+      background-color: rgb(12, 112, 189);
+      transform: translateY(-2px);
+    }
+    
+    button.btn-primary:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(26, 7, 77, 0.925);
+    }
+    a{
+      color: #020202;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    a:hover {
+      color: #253af5;
+      text-decoration: underline;
+    }
+    
+    
+
+    p {
+        font-size: 1rem; /* Texto más pequeño para pantallas pequeñas */
+    }
+
+}
+
+@media (max-width: 576px) {
+    body {
+        background: url('image/foto.jpg') no-repeat center center; /* Fondo para pantallas muy pequeñas */
+        background-size: cover; /* Asegura que cubra toda la pantalla */
+    }
+
+    h1 {
+        font-size: 1.2rem; /* Más pequeño para móviles */
+    }
+
+    #login-form::before {
+        font-size: 30px; /* Reduce más el icono */
+    }
+
+    button {
+        font-size: 0.8rem; /* Texto compacto */
+    }
+
+    p {
+        font-size: 0.7rem; /* Texto reducido para pantallas muy pequeñas */
+    }
+
+    form {
+        padding: 10px; /* Relleno mínimo */
+    }
+}

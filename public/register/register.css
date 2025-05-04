@@ -1,0 +1,341 @@
+/* Estilos generales */
+body {
+  background: url('./imagen/fondopc.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 1rem;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Tarjeta del formulario */
+.card {
+  padding: 2rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.349);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Títulos */
+h1{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  color: #ffffff;
+}
+
+/* Textos destacados */
+.texto{
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #fff9f9;
+}
+
+.text-center.mb-3 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+/* Etiquetas de los campos */
+.form-label, .mb-3 label, .profile {
+  font-weight: 600;
+  color: #000;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Campos de entrada */
+.form-control{
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #fceb00;
+  border-radius: 10px;
+  background-color: #ffffff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-control{
+  border-color: #ec6d04;
+  box-shadow: 0 0 8px rgba(255, 255, 0, 0.7);
+  outline: none;
+}
+
+.form-control:focus {
+  border-color: #ec6d04;
+  box-shadow: 0 0 8px rgba(255, 255, 0, 0.7);
+  outline: none;
+}
+
+#perfil {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #fceb00;
+  border-radius: 10px;
+  background-color: #ffffff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Botón */
+.btn-success {
+  background-color: #9fd4ff;
+  border: 2px solid #000000;
+  color: #080808;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.75rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}           
+
+.btn-success:hover {
+  background-color: #faae20;
+  border-color: #ffee58;
+  transform: scale(1.05);
+}
+
+.form-label {
+  color: #000000;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Mensajes y enlaces */
+p {
+  text-align: center;
+  font-size: 1rem;
+  color: #fffbfb;
+  margin-top: 1rem;
+}
+
+p a {
+  color: #23ffed;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+p a:hover {
+  color: #021327;
+  text-decoration: underline;
+}
+
+  /* Diseño responsivo para pantallas pequeñas */
+  @media (max-width: 768px) {
+
+    body {
+        background: url('./imagen/fondocel.jpg') no-repeat center center;
+        background-size: cover;
+      }
+        /* Contenedor principal */
+      .container {
+        max-width: 500px;
+        width: 90%;
+      }
+      
+      /* Tarjeta del formulario */
+      .card {
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.61); /* Reverting to previous shadow */
+        background: rgba(255, 255, 255, 0.336); /* Transparencia para destacar el formulario */
+      }
+      
+      /* Títulos */
+      h1, h2 {
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .texto {color: hsl(0, 0%, 100%);
+        font-size: 1.2rem;
+        text-align:center;
+        margin-bottom: 20px;
+      }
+
+      .text-center.mb-3 {
+        color: #070707;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      
+      .mb-3 {
+        color: #020202;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+      .btn.btn-success {color: #000000;
+      }
+      
+      /* Estilos para los inputs */
+      .form-control {
+        border-radius: 8px;
+        padding: 12px;
+        border: 1px solid #07fdb3;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .form-control:focus {
+        border-color: #5eff00;
+        box-shadow: 0px 0px 8px rgb(33, 153, 2);
+      }
+      
+      /* Botón de registro */
+      .btn-success {
+        background-color: #0e8b23c5;
+        border-color: #10130f;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding: 12px;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .btn-success:hover {
+        background-color:#037716;
+        border-color: #10130f;
+        transform: scale(1.07);
+      }
+
+      
+      p {
+        color: #070707;
+        text-align: center;
+        font-size: 1.1rem;
+        margin-top: 10px;
+      }
+      
+      /* Enlace de inicio de sesión */
+      p a {
+        color: #010044;
+        font-weight: bold;
+      }
+      
+      p a:hover {
+        color: #0e25a5;
+        text-decoration: underline;
+      }
+      }
+      
+  /* Diseño responsivo para pantallas extra pequeñas (480px) */
+  @media (max-width: 480px)  {
+
+    body {
+        background: url('./imagen/fondocel.jpg') no-repeat center center;
+        background-size: cover;
+      }
+        /* Contenedor principal */
+      .container {
+        max-width: 500px;
+        width: 90%;
+      }
+      
+      /* Tarjeta del formulario */
+      .card {
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.61); /* Reverting to previous shadow */
+        background: rgba(255, 255, 255, 0.336); /* Transparencia para destacar el formulario */
+      }
+      
+      /* Títulos */
+      h1, h2 {
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .texto {color: hsl(0, 0%, 100%);
+        font-size: 1.2rem;
+        text-align:center;
+        margin-bottom: 20px;
+      }
+
+      .text-center.mb-3 {
+        color: #070707;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      
+      .mb-3 {
+        color: #020202;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+      .btn.btn-success {color: #000000;
+      }
+      
+      /* Estilos para los inputs */
+      .form-control {
+        border-radius: 8px;
+        padding: 12px;
+        border: 1px solid #07fdb3;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .form-control:focus {
+        border-color: #5eff00;
+        box-shadow: 0px 0px 8px rgb(33, 153, 2);
+      }
+      
+      /* Botón de registro */
+      .btn-success {
+        background-color: #40af52c5;
+        border-color: #10130f;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding: 12px;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .btn-success:hover {
+        background-color:#037716;
+        border-color: #10130f;
+        transform: scale(1.07);
+      }
+
+      
+      p {
+        color: #070707;
+        text-align: center;
+        font-size: 1.1rem;
+        margin-top: 10px;
+      }
+      
+      /* Enlace de inicio de sesión */
+      p a {
+        color: #010044;
+        font-weight: bold;
+      }
+      
+      p a:hover {
+        color: #0e25a5;
+        text-decoration: underline;
+      }
+      }
